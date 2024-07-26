@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fields name="typelist-site" addfieldpath="/plugins/system/t4/admin/field">
+    <fieldset name="site-logo" icon="cubes" class="site_group has-icon" type="legend" subgroup="1" label="T4_GROUP_LOGO_LABEL" description="T4_GROUP_LOGO_DESC">
+      <field name="site_name" type="text" default="" label="TPL_T4_SITE_NAME_LABEL" description="TPL_T4_SITE_NAME_DESC" filter="string" />
+      <field name="site_slogan" type="text" default="" label="TPL_T4_SITE_SLOGAN_LABEL" description="TPL_T4_SITE_SLOGAN_DESC" filter="string" />
+      <field name="site_logo" type="media" class="t4-input-media" default="" label="TPL_T4_SITE_LOGO" description="TPL_T4_SITE_LOGO_DESC" />
+      <field name="site_logo_dark" type="media" class="t4-input-media" default="" label="TPL_T4_SITE_LOGO_DARK" description="TPL_T4_SITE_LOGO_DARK_DESC" />
+      <field name="site_logo_small" type="media" class="t4-input-media" default="" label="TPL_T4_SITE_LOGO_SMALL" description="TPL_T4_SITE_LOGO_SMALL_DESC" />
+      <field name="site_logo_dark_small" type="media" class="t4-input-media" default="" label="TPL_T4_SITE_LOGO_DARK_SMALL" description="TPL_T4_SITE_LOGO_DARK_SMALL_DESC" />
+    </fieldset>
+
+  </fields>
+</form>

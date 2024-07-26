@@ -1,0 +1,382 @@
+/**
+ *------------------------------------------------------------------------------
+ * @package       T4_Blank_BS5 - Free Template for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2021 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+**/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Assistant", sans-serif;
+  color: #6B7280;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  font-weight: 500;
+}
+
+pre,
+code {
+  color: #e83e8c;
+}
+
+.alert {
+  background-color: #e9ecef;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  position: relative;
+}
+.alert .close {
+  border: 1px solid rgba(0, 0, 0, 0.001);
+  border-radius: 3px;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  text-align: center;
+  width: 20px;
+}
+.alert .close:hover, .alert .close:focus, .alert .close:active {
+  cursor: pointer;
+}
+.alert h4 {
+  margin: 0;
+}
+.alert.alert-warning {
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+  color: #856404;
+}
+.alert.alert-message {
+  background-color: #cce5ff;
+  border-color: #b8daff;
+  color: #004085;
+}
+
+.t4-error-page {
+  background-color: #fff;
+}
+.t4-error-page h1 {
+  margin: 0 0 1rem;
+  font-size: 1.333rem;
+}
+@media screen and (min-width: 768px) {
+  .t4-error-page h1 {
+    font-size: 1.733rem;
+  }
+}
+.t4-error-page .t4-error-msg {
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.075);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.075);
+  border-radius: 7px;
+  padding: 2rem;
+  margin: 0 1rem;
+  min-height: 180px;
+  margin-top: 50vh;
+  max-width: 576px;
+  position: relative;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  .t4-error-page .t4-error-msg {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8rem;
+    text-align: left;
+  }
+}
+.t4-error-page img {
+  opacity: 0.1;
+  margin: 0 auto;
+  width: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .t4-error-page img {
+    position: absolute;
+    left: 2rem;
+    top: 2.5rem;
+    margin: 0;
+  }
+}
+.t4-error-page .error-message {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.t4-error-page code {
+  background-color: #FEF3F8;
+  border-radius: 3px;
+  color: #e83e8c;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9333rem;
+  padding: 0 5px;
+}
+.t4-error-page .cta-wrap h3 {
+  color: #6c757d;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .t4-error-page .cta-wrap h3 {
+    display: inline-block;
+    margin: 0 0.5rem 0 0;
+  }
+}
+.t4-error-page .cta-wrap a {
+  background: #e9ecef;
+  border-radius: 25px;
+  color: #495057;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 5px 0.25rem;
+  letter-spacing: 1px;
+  padding: 0.3333333333rem 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+.t4-error-page .cta-wrap a:hover, .t4-error-page .cta-wrap a:focus, .t4-error-page .cta-wrap a:active {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+body.offline {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body.offline input {
+  font-family: inherit;
+}
+
+.outline {
+  border: 1px solid #e9ecef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 480px;
+  margin: 1rem;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .outline {
+    width: auto;
+    max-width: 1000px;
+  }
+}
+
+.offline-image {
+  max-width: 100%;
+}
+.offline-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+@media (max-width: 991.98px) {
+  .offline-image {
+    display: none;
+  }
+}
+
+.form-wrap {
+  background-color: #fff;
+  max-width: 480px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .form-wrap {
+    min-width: 480px;
+  }
+}
+.form-wrap .offline-header {
+  padding: 2rem 2rem 2.5rem;
+}
+@media (min-width: 992px) {
+  .form-wrap .offline-header {
+    padding: 3rem 3rem 3.5rem;
+  }
+}
+.form-wrap h1 {
+  display: block;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+@media (min-width: 992px) {
+  .form-wrap h1 {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+.form-wrap .offline-message {
+  text-align: center;
+}
+.form-wrap #form-login {
+  padding: 0 2rem 2rem;
+}
+.form-wrap #form-login fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.form-wrap #form-login #form-login-username,
+.form-wrap #form-login #form-login-password,
+.form-wrap #form-login #form-login-secretkey {
+  margin: 0 0 2rem;
+}
+.form-wrap #form-login #form-login-username label,
+.form-wrap #form-login #form-login-password label,
+.form-wrap #form-login #form-login-secretkey label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.form-wrap #form-login #form-login-username input,
+.form-wrap #form-login #form-login-password input,
+.form-wrap #form-login #form-login-secretkey input {
+  background: #fff;
+  border-radius: 0.25rem;
+  border: 1px solid var(--t4-gray-400);
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: none;
+  padding: 0.4375rem 1.5rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+.form-wrap #form-login #form-login-username input:focus,
+.form-wrap #form-login #form-login-password input:focus,
+.form-wrap #form-login #form-login-secretkey input:focus {
+  border-color: var(--t4-gray-600);
+  outline: none;
+}
+.form-wrap #form-login input.button {
+  background: var(--body-link-color);
+  border-radius: 0.25rem;
+  border: 1px solid var(--body-link-color);
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.4375rem 1.5rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  text-shadow: none;
+  width: 100%;
+}
+.form-wrap #form-login input.button:hover, .form-wrap #form-login input.button:focus, .form-wrap #form-login input.button:active {
+  background: var(--body-link-hover-color);
+  border-color: var(--body-link-hover-color);
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .form-wrap #form-login {
+    padding: 0 3rem 3rem;
+  }
+}
+
+body.error-page .error-page-wrap {
+  background-color: #fff;
+}
+body.error-page #outline {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+body.error-page #errorbox-outline {
+  margin: 0 auto;
+  max-width: 8000px;
+}
+body.error-page .error-code {
+  color: #252525;
+  display: inline-block;
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -9.5px;
+  margin-bottom: 64px;
+}
+body.error-page .error-other-info .error-msg h2 {
+  color: #252525;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 40px;
+  margin: 0 0 1rem;
+}
+body.error-page .error-other-info p {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+}
+body.error-page .error-other-info .page-redirect {
+  padding-top: 3rem;
+}
+body.error-page .error-other-info .page-redirect a {
+  background: #4258FF;
+  border: 1px solid #4258FF;
+  border-radius: 8px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 0.532rem 1.5rem;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+body.error-page .error-other-info .page-redirect a:hover, body.error-page .error-other-info .page-redirect a:focus, body.error-page .error-other-info .page-redirect a:active {
+  opacity: 0.85;
+}

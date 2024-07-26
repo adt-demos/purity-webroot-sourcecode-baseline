@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <title>Features Intro Style 3</title>
+	<sampledata></sampledata>
+	<fields name="features-intro">
+		<fieldset name="section-features" label="FEATURE_SECTION_LABEL" description="FEATURE_SECTION_LABEL_DESC">
+			<field name="feature-title" type="text" default="" label="FEATURE_HEADING_LABEL" description="FEATURE_HEADING_DESC" />
+			<field name="feature-desc" type="textarea" default="" label="FEATURE_DESC_LABEL" description="FEATURE_DESC_DESC" />
+			<field name="feature-main-img" type="media" default="" label="FEATURE_MAIN_IMAGE_LABEL" description="FEATURE_MAIN_IMAGE_DESC" />
+
+			<field name="media-alignment" type="list" default="row" label="FEATURE_MEDIA_ALIGNMENT_LABEL" description="FEATURE_MEDIA_ALIGNMENT_DESC" >
+				<option value="row">Left</option>
+				<option value="row-reverse">Right</option>
+				<option value="column">Top</option>
+				<option value="column-reverse">Bottom</option>
+			</field>
+
+			<field name="feature-btn" type="jalist">
+				<field name="btn-text" type="text" default="" label="FEATURE_BTN_TEXT_LABEL" description="FEATURE_BTN_TEXT_DESC"/>
+				<field name="btn-link" type="text" default="" label="FEATURE_BTN_LINK_LABEL" description="FEATURE_BTN_LINK_DESC"/>
+				<field name="btn-type" type="list" default="" label="FEATURE_BTN_TYPE_LABEL" description="FEATURE_BTN_TYPE_DESC">
+					<option value="btn-primary">Primary</option>
+					<option value="btn-secondary">Secondary</option>
+					<option value="btn-success">Success</option>
+					<option value="btn-light">Light</option>
+					<option value="btn-outline-light">Outline Light</option>
+					<option value="btn-dark">Dark</option>
+					<option value="btn-outline-dark">Outline Dark</option>
+				</field>
+			</field>			
+
+			<field name="sub-features-columns" type="list" label="SUB_FEATURES_COLUMNS_LABEL" description="SUB_FEATURES_COLUMNS_DESC" >
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</field>
+
+			<field name="sub-media-alignment" type="list" label="SUB_FEATURES_MEDIA_ALIGNMENT_LABEL" description="SUB_FEATURES_MEDIA_ALIGNMENT_DESC">
+				<option value="top">Top</option>
+				<option value="left">Left</option>
+			</field>
+			<field name="sub-feature-media-width" type="text" default="" label="SUB_FEATURE_MEDIA_WIDTH_LABEL" description="SUB_FEATURE_MEDIA_WIDTH_DESC" />
+
+			<field name="sub-features" type="jalist">
+				<item name="sub-feature-img" class="not-required" type="media" default="" label="SUB_FEATURE_IMAGE_LABEL" description="SUB_FEATURE_IMAGE_DESC" />
+				<item name="sub-feature-text-icon" type="text" default="" label="SUB_FEATURE_TEXT_ICON_LABEL" description="SUB_FEATURE_TEXT_ICON_DESC" />
+				<item name="sub-feature-title" type="text" default="" label="SUB_FEATURE_TITLE_LABEL" description="SUB_FEATURE_TITLE_DESC" />
+				<item name="sub-feature-desc" type="textarea" row="5" default="" label="SUB_FEATURE_DESC_LABEL" description="SUB_FEATURE_DESC_DESC" />
+			</field>
+		</fieldset>
+  </fields>
+</form>

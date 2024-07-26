@@ -1,0 +1,408 @@
+@import "vars";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Assistant', sans-serif;
+  color: #6B7280;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  font-weight: 500;
+}
+
+pre,
+code {
+  color: #e83e8c;
+}
+
+.alert {
+  background-color: $gray-200;
+  border: 1px solid rgba($black, 0.1);
+  border-radius: 5px;
+  margin-bottom: $spacer;
+  padding: $spacer/2;
+  position: relative;
+
+  .close {
+    border: 1px solid rgba($black, 0.1%);
+    border-radius: 3px;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: $spacer/2;
+    top: $spacer/2;
+    text-align: center;
+    width: 20px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      cursor: pointer;
+    }
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  &.alert-warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+  }
+
+  &.alert-message {
+    background-color: #cce5ff;
+    border-color: #b8daff;
+    color: #004085;
+  }
+}
+
+// 
+// T4 ERROR PAGE
+// ------------------------
+.t4-error-page {
+  background-color: $white;
+
+  h1 {
+    margin: 0 0 $spacer;
+    font-size: 1.333rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.733rem;
+    }
+  }
+
+  .t4-error-msg {
+    background-color: $white;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.075);
+    border-radius: 7px;
+    padding: $spacer*2;
+    margin: 0 $spacer;
+    min-height: 180px;
+    margin-top: calc(100vh / 2);
+    max-width: 576px;
+    position: relative;
+    text-align: center;
+    transform: translateY(-50%);
+
+    @media screen and (min-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: $spacer*8;
+      text-align: left;
+    }
+  }
+
+  img {
+    opacity: .1;
+    margin: 0 auto;
+    width: $spacer*5;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      left: $spacer*2;
+      top: $spacer*2.5;
+      margin: 0;
+    }
+  }
+
+  .error-message {
+    margin-top: 0;
+    margin-bottom: $spacer*2;
+  }
+
+  code {
+    background-color: #FEF3F8;
+    border-radius: 3px;
+    color: #e83e8c;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9333rem;
+    padding: 0 5px;
+  }
+
+  .cta-wrap {
+    h3 {
+      color: $gray-600;
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin: 0 0 $spacer/2 0;
+      text-transform: uppercase;
+
+      @media screen and (min-width: 768px) {
+        display: inline-block;
+        margin: 0 $spacer/2 0 0;
+      }
+    }
+
+    a {
+      background: $gray-200;
+      border-radius: 25px;
+      color: $gray-700;
+      display: inline-block;
+      font-size: 0.8rem;
+      margin: 5px $spacer/4;
+      letter-spacing: 1px;
+      padding: $spacer/3 $spacer;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.25s ease-in;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+  }
+}
+
+
+// OFFLINE PAGE
+// -------------------------------
+body.offline {
+  align-items: center;
+  display: flex;
+  font-family: 'Assistant', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+
+  input {
+    font-family: inherit;
+  }
+}
+
+.outline {
+  border: 1px solid $border-color;
+  display: flex;
+  max-width: 480px;
+  margin: $spacer;
+  width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    width: auto;
+    max-width: 1000px;
+  }
+}
+
+// Offline Image
+.offline-image {
+  max-width: 100%;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
+// Form Login
+.form-wrap {
+  background-color: $white;
+  max-width: 480px;
+  width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    min-width: 480px;
+  }
+
+  // Title
+  .offline-header {
+    padding: 2rem 2rem 2.5rem;
+
+    @include media-breakpoint-up(lg) {
+      padding: 3rem 3rem 3.5rem;
+    }
+  }
+
+  // Site Name
+  h1 {
+    display: block;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: $font-weight-normal;
+    text-align: center;
+    margin: 0 0 $spacer*1.5;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 4.5rem;
+      line-height: 1;
+    }
+  }
+
+  // Mesages
+  .offline-message {
+    text-align: center;
+  }
+
+  // Form Login
+  #form-login {
+    padding: 0 2rem 2rem;
+
+    fieldset {
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    #form-login-username,
+    #form-login-password,
+    #form-login-secretkey {
+      margin: 0 0 $spacer*2;
+
+      label {
+        display: block;
+        margin-bottom: $spacer/2;
+      }
+
+      input {
+        background: $white;
+        border-radius: $border-radius;
+        border: 1px solid var(--t4-gray-400);
+        display: block;
+        font-size: $input-font-size;
+        line-height: $input-line-height;
+        max-width: none;
+        padding: $input-padding-y $input-padding-x;
+        transition: $transition-base;
+        width: 100%;
+
+        &:focus {
+          border-color: var(--t4-gray-600);
+          outline: none;
+        }
+      }
+    }
+
+    // Button Login
+    input.button {
+      background: var(--body-link-color);
+      border-radius: $border-radius;
+      border: 1px solid var(--body-link-color);
+      color: $white;
+      display: block;
+      font-size: $input-font-size;
+      font-weight: $btn-font-weight;
+      padding: $input-padding-y $input-padding-x;
+      letter-spacing: 0.5px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: all 0.25s;
+      text-shadow: none;
+      width: 100%;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background: var(--body-link-hover-color);
+        border-color: var(--body-link-hover-color);
+        cursor: pointer;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 0 3rem 3rem;
+    }
+  }
+}
+
+
+// ERROR PAGE
+// -------------------------------
+body.error-page {
+  .error-page-wrap {
+    background-color: $white;
+  }
+
+  #outline {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  #errorbox-outline {
+    margin: 0 auto;
+    max-width: 8000px;
+  }
+
+  // Eror Code
+  .error-code {
+    color: #252525;
+    display: inline-block;
+    font-size: 200px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -9.5px;
+    margin-bottom: 64px;
+  }
+
+  // Error info
+  .error-other-info {
+
+    // Message Error
+    .error-msg {
+      h2 {
+        color: #252525;
+        font-size: 32px;
+        font-weight: 500;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        line-height: 40px;
+        margin: 0 0 $spacer;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 27px;
+      margin: 0;
+    }
+
+    // Button Home
+    .page-redirect {
+      padding-top: $spacer*3;
+
+      a {
+        background: #4258FF;
+        border: 1px solid #4258FF;
+        border-radius: 8px;
+        color: $white;
+        display: inline-block;
+        font-size: $btn-font-size;
+        font-weight: 700;
+        line-height: $btn-line-height;
+        padding: $btn-padding-y $btn-padding-x;
+        text-decoration: none;
+        transition: all 0.25s ease;
+
+        &:hover,
+        &:focus,
+        &:active {
+          opacity: 0.85;
+        }
+      }
+    }
+  }
+}

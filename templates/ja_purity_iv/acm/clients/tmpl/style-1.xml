@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <title>Our Clients</title>
+	<sampledata></sampledata>
+	<fields name="clients-intro">
+		<fieldset name="clients-basic" label="CLIENTS_BASIC_LABEL" description="CLIENTS_BASIC_DESC">
+			<field name="columns" type="list" label="CLIENTS_COLUMNS_LABEL" description="CLIENTS_COLUMNS_DESC" >
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="6">6</option>
+			</field>
+
+			<field name="opacity" type="list" label="CLIENTS_EFFECT_OPACITY_LABEL" default="100" description="CLIENTS_EFFECT_OPACITY_DESC" >
+				<option value="100">100</option>
+				<option value="75">75</option>
+				<option value="50">50</option>
+				<option value="25">25</option>
+			</field>
+		</fieldset>
+
+		<fieldset name="section-clients" label="CLIENTS_SECTION_LABEL" description="CLIENTS_SECTION_DESC">
+			<field name="data" type="jalist">
+				<item name="client-image" type="media" default="" label="CLIENT_IMAGE_LABEL" description="CLIENT_IMAGE_DESC" />
+				<item name="client-name" type="text" default="" label="CLIENT_NAME_LABEL" description="CLIENT_NAME_DESC" />
+				<item name="client-link" type="textarea" default="" label="CLIENT_LINK_LABEL" description="CLIENT_LINK_INFO_DESC" />
+			</field>
+		</fieldset>
+  </fields>
+</form>

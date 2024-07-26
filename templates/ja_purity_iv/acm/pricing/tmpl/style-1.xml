@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<title>Pricing Style 1</title>
+	<sampledata></sampledata>
+	<fields name="pricing-intro">
+		<fieldset name="basic" label="PRICING_BASIC_LABEL" description="PRICING_BASIC_DESC">
+			<field name="gl-title" type="text" default="" label="PRICING_TITLE_LABEL" description="PRICING_TITLE_DESC" rows="5" cols="40" />
+			<field name="gl-desc" type="textarea" default="" label="PRICING_DESC_LABEL" description="PRICING_DESC_DESC" rows="5" cols="40" />
+			<field name="gl-link" type="text" default="" label="PRICING_LINK_LABEL" description="PRICING_LINK_DESC"/>
+			<field name="gl-img" type="media" label="PRICING_BG_MEDIA_LABEL" description="PRICING_BG_MEDIA_DESC"/>
+
+			<field name="num-items" type="list" default="false" label="PRICING_NUM_COLS_TITLE" description="PRICING_NUM_COLS_DES">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</field>
+		</fieldset>
+
+		<fieldset name="section-pricing" label="PRICING_SECTION_LABEL" description="PRICING_SECTION_DESC" multiple="1">
+				<field name="img-intro" type="media" default="" label="PRICING_IMAGE_LABEL" description="PRICING_IMAGE_DESC"  required="1"/>
+				<field name="title" type="text" default="" label="PRICING_TITLE_LABEL" description="PRICING_TITLE_DESC" rows="5" cols="40" required="1" />
+				<field name="desc" type="textarea" default="" label="PRICING_DESC_LABEL" description="PRICING_DESC_DESC" rows="5" cols="40" />
+				<field name="plan-list" type="textarea" default="" label="PRICING_PLAN_DESCRIPTION_LABEL" description="PRICING_PLAN_DESCRIPTION_DESC" />
+				<field name="price" type="text" default="" label="PRICING_PRICE_PLAN_LABEL" description="PRICING_PRICE_PLAN_DESC" />
+				<field name="btn-title" type="text" default="" label="PRICING_BUTTON_TITLE_LABEL" description="PRICING_BUTTON_TITLE_DESC" />
+				<field name="btn-link" type="text" default="" label="PRICING_BUTTON_LINK_LABEL" description="PRICING_BUTTON_LINK_DESC" />
+				<field name="btn-type" type="list" default="outline-dark" label="TPL_TYPE_BUTTON_LABEL" description="TPL_TYPE_BUTTON_DESC">
+				<option value="primary">Primary</option>
+				<option value="secondary">Secondary</option>
+				<option value="dark">Dark</option>
+				<option value="outline-dark">Outline Dark</option>
+				<option value="light">Light</option>
+				<option value="outline-light">Outline Light</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

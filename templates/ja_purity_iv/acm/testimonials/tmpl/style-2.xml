@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Testimonial Style 1</title>
+	<sampledata></sampledata>
+	<fields name="testimonial-intro">
+		<fieldset name="testimonial-basic" label="TESTIMONIALS_BASIC_LABEL" description="TESTIMONIALS_BASIC_DESC">
+
+			<field name="testimonial-desc" type="text" default="" label="TESTIMONIALS_DESCRIPTIONS_LABEL" description="TESTIMONIALS_DESCRIPTIONS_DESC"/>
+			<field name="btn-link" type="text" default="" label="TESTIMONIALS_LINK_BUTTON_LABEL" description="TESTIMONIALS_LINK_BUTTON_DESC"/>
+			<field name="btn-title" type="text" default="" label="TESTIMONIALS_TITLE_BUTTON_LABEL" description="TESTIMONIALS_TITLE_BUTTON_DESC"/>
+			<field name="btn-type" type="list" default="primary" label="TESTIMONIALS_TYPE_BUTTON_LABEL" description="TESTIMONIALS_TYPE_BUTTON_DESC">
+				<option value="primary">Primary</option>
+				<option value="secondary">Secondary</option>
+				<option value="info">Info</option>
+			</field>
+		</fieldset>
+
+		<fieldset name="section-features" label="TESTIMONIAL_SECTION_LABEL" description="TESTIMONIAL_SECTION_DESC" multiple="1">
+			<field name="img" type="media" default="" label="TESTIMONIAL_IMAGE_LABEL" description="TESTIMONIAL_IMAGE_LABEL_DESC"  />
+			<field name="name" type="text" default="" label="TESTIMONIAL_NAME_LABEL" description="TESTIMONIAL_NAME_DESC" required="1"/>
+			<field name="member-position" type="text" default="" label="TESTIMONIAL_POSITION_LABEL" description="TESTIMONIAL_POSITION_DESC" />
+			<field name="member-description" type="textarea" default="" size="40" label="TESTIMONIAL_DESCRIPTION_LABEL" description="TESTIMONIAL_DESCRIPTION_DESC" required="1" />
+		</fieldset>
+		
+  </fields>
+</form>

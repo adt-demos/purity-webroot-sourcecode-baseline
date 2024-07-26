@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fields name="params">
+    <field type="spacer" name="item-spacer" label="ITEM_PARAMETERS" />
+    <fieldset name="custom-field" label="Extra Field" description="">
+			<field name="item-cols" type="list" default="3" label="TPL_ITEM_COLS_LABEL" description="TPL_ITEM_COLS_DESC">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="6">6</option>
+			</field>
+			<field name="item-cols-md" type="list" default="3" label="TPL_ITEM_COLS_MD_LABEL" description="TPL_ITEM_COLS_MD_DESC">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="6">6</option>
+			</field>
+			<field name="item-cols-lg" type="list" default="3" label="TPL_ITEM_COLS_LG_LABEL" description="TPL_ITEM_COLS_LG_DESC">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="6">6</option>
+			</field>
+    </fieldset>
+  </fields>
+</form>

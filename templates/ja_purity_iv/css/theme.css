@@ -1,0 +1,75 @@
+/**
+ *------------------------------------------------------------------------------
+ * @package       T4_Blank_BS5 - Free Template for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2021 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+**/
+:root {
+  --t4-blue: #0d6efd;
+  --t4-indigo: #6610f2;
+  --t4-purple: #6f42c1;
+  --t4-pink: #d63384;
+  --t4-red: #dc3545;
+  --t4-orange: #fd7e14;
+  --t4-yellow: #ffc107;
+  --t4-green: #198754;
+  --t4-teal: #20c997;
+  --t4-cyan: #0dcaf0;
+  --t4-white: #fff;
+  --t4-gray: #6c757d;
+  --t4-gray-dark: #343a40;
+  --t4-gray-100: #f8f9fa;
+  --t4-gray-200: #e9ecef;
+  --t4-gray-300: #dee2e6;
+  --t4-gray-400: #ced4da;
+  --t4-gray-500: #adb5bd;
+  --t4-gray-600: #6c757d;
+  --t4-gray-700: #495057;
+  --t4-gray-800: #343a40;
+  --t4-gray-900: #212529;
+  --t4-primary: #0d6efd;
+  --t4-secondary: #6c757d;
+  --t4-success: #198754;
+  --t4-info: #0dcaf0;
+  --t4-warning: #ffc107;
+  --t4-danger: #dc3545;
+  --t4-light: #f8f9fa;
+  --t4-dark: #212529;
+  --t4-primary-rgb: 13, 110, 253;
+  --t4-secondary-rgb: 108, 117, 125;
+  --t4-success-rgb: 25, 135, 84;
+  --t4-info-rgb: 13, 202, 240;
+  --t4-warning-rgb: 255, 193, 7;
+  --t4-danger-rgb: 220, 53, 69;
+  --t4-light-rgb: 248, 249, 250;
+  --t4-dark-rgb: 33, 37, 41;
+  --t4-white-rgb: 255, 255, 255;
+  --t4-black-rgb: 0, 0, 0;
+  --t4-body-color-rgb: 33, 37, 41;
+  --t4-body-bg-rgb: 255, 255, 255;
+  --t4-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --t4-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --t4-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --t4-body-font-family: var(--t4-font-sans-serif);
+  --t4-body-font-size: 1rem;
+  --t4-body-font-weight: 400;
+  --t4-body-line-height: 1.5;
+  --t4-body-color: #212529;
+  --t4-body-bg: #fff;
+  --t4-border-width: 1px;
+  --t4-border-style: solid;
+  --t4-border-color: #e9ecef;
+  --t4-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --t4-border-radius: 0.25rem;
+  --t4-border-radius-sm: 0.2rem;
+  --t4-border-radius-lg: 0.3rem;
+  --t4-border-radius-xl: 1rem;
+  --t4-border-radius-2xl: 2rem;
+  --t4-border-radius-pill: 50rem;
+  --t4-link-color: #0d6efd;
+  --t4-link-hover-color: #0a58ca;
+  --t4-code-color: #d63384;
+  --t4-highlight-bg: #fcf8e3; }

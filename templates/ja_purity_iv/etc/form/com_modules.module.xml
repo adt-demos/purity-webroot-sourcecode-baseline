@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="custom-field" label="Extra Field" description="">
+			<field type="spacer" name="sec-spacer" label="SECTION_PARAMETERS" />
+			<field name="bg-color" type="list" default="default" label="TPL_BG_MODULE_LABEL" description="TPL_BG_MODULE_DESC">
+				<option value="bg-default">Body Background</option>
+				<option value="bg-light">Gray</option>
+				<option value="bg-dark">Dark</option>
+				<option value="bg-purple">Purple</option>
+				<option value="bg-indigo">Indigo</option>
+				<option value="bg-secondary">Secondary</option>
+				<option value="bg-primary">Primary</option>
+				<option value="bg-info">Info</option>
+				<option value="bg-success">Success</option>
+				<option value="bg-warning">Warning</option>
+				<option value="bg-danger">Danger</option>
+			</field>
+
+			<field name="top-space" type="list" default="large" label="TPL_TOP_SPACE_LABEL" description="TPL_TOP_SPACE_DESC">
+				<option value="blank">No Space</option>
+				<option value="small">Small</option>
+				<option value="normal">Normal</option>
+				<option value="medium">Medium</option>
+				<option value="large">Large</option>
+			</field>
+
+			<field name="bottom-space" type="list" default="large" label="TPL_BOTTOM_SPACE_LABEL" description="TPL_BOTTOM_SPACE_DESC">
+				<option value="blank">No Space</option>
+				<option value="small">Small</option>
+				<option value="normal">Normal</option>
+				<option value="medium">Medium</option>
+				<option value="large">Large</option>
+			</field>
+
+			<field type="spacer" name="heading-spacer" label="HEADING_PARAMETERS" />
+
+			<field name="sub-heading" type="text" default="" label="TPL_SUB_HEADING_LABEL" description="TPL_SUB_HEADING_DESC" filter="RAW" />
+			
+			<field name="main-heading" type="textarea" default="" label="TPL_MAIN_HEADING_LABEL" description="TPL_MAIN_HEADING_DESC" filter="RAW" />
+
+			<field name="sub-align" type="list" default="center" label="TPL_SUB_ALIGN_LABEL" description="TPL_SUB_ALIGN_DESC">
+				<option value="left">Left</option>
+				<option value="center">Center</option>
+			</field>
+
+			<field name="heading-columns" type="list" default="12" label="TPL_HEADING_COLUMNS_LABEL" description="TPL_HEADING_COLUMNS_DESC">
+				<option value="12">12</option>
+				<option value="6">6</option>
+				<option value="4">4</option>
+				<option value="3">3</option>
+			</field>
+
+			<field name="btn-more-text" type="text" default="" label="TPL_BTN_TEXT_LABEL" description="TPL_BTN_TEXT_DESC" filter="RAW" />
+			<field name="btn-more-link" type="text" default="" label="TPL_BTN_LINK_LABEL" description="TPL_BTN_LINK_DESC" filter="RAW" />
+
+			<field name="btn-more-type" type="list" default="secondary" label="TPL_BTN_TYPE_LABEL" description="TPL_BTN_TYPE_DESC">
+				<option value="secondary">Secondary</option>
+				<option value="primary">Primary</option>
+				<option value="info">Info</option>
+				<option value="outline-primary">Outline Primary</option>
+				<option value="outline-secondary">Outline Secondary</option>
+				<option value="outline-info">Outline Info</option>
+				<option value="outline-dark">Outline Dark</option>
+			</field>
+
+
+
+    </fieldset>
+  </fields>
+</form>

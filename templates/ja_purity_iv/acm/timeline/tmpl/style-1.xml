@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Timeline Style 1</title>
+	<sampledata></sampledata>
+	<fields name="timeline-intro">
+		<fieldset name="timeline-basic" label="TIMELINE_BASIC_LABEL" description="TIMELINE_BASIC_DESC">
+			<field name="timeline-content-width" type="list" label="TIMELINE_CONTENT_WIDTH_LABEL" description="TIMELINE_CONTENT_WIDTH_DESC" >
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</field>
+		</fieldset>
+
+		<fieldset name="section-timeline" label="TIMELINE_SECTION_LABEL_LABEL" description="TIMELINE_SECTION_LABEL_DESC" multiple="1">
+			<field name="timeline-time" type="text" default="" label="TIMELINE_TIME_LABEL" description="TIMELINE_TIME_DESC" />
+			<field name="timeline-title" type="text" default="" label="TIMELINE_TITLE_LABEL" description="TIMELINE_TITLE_DESC" />
+			<field name="timeline-desc" type="textarea" default="" label="TIMELINE_DESC_INFO_LABEL" description="TIMELINE_DESC_INFO_DESC" />
+			<field name="timeline-image" type="media" default="" label="TIMELINE_IMAGE_LABEL" description="TIMELINE_IMAGE_DESC" />
+		</fieldset>
+  </fields>
+</form>

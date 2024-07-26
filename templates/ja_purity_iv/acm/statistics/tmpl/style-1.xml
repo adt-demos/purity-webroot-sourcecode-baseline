@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<title>Statistics Style 1</title>
+	<sampledata></sampledata>
+    <fields name="statistics">
+    	<fieldset name="basic" label="STATISTICS_BASIC_LABEL" description="STATISTICS_BASIC_DESC">
+				<field name="columns" type="list" label="STATISTICS_COLUMNS_LABEL" description="STATISTICS_COLUMNS_DESC" >
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="statistics-box" label="STATISTICS_BOX_LABEL" description="STATISTICS_BOX_DESC">
+				<field name="data-style-2" type="jalist">
+					<item name="stats-count" type="text" default="" label="STATISTICS_COUNT_LABEL" description="STATISTICS_COUNT_DESC" required="1" />
+					<item name="stats-title" type="text" default="" label="STATISTICS_COUNT_TITLE_LABEL" description="STATISTICS_COUNT_TITLE_DESC" required="1" />
+					<item name="stats-name" type="text" default="" label="STATISTICS_NAME_LABEL" description="STATISTICS_NAME_DESC" />
+				</field>
+			</fieldset>
+    </fields>
+</form>

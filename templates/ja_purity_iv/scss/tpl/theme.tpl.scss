@@ -1,0 +1,64 @@
+// Function, variables
+@import "../vars";
+
+// Theme Customize
+@import "../../../../plugins/system/t4/themes/base/scss/theme.tpl";
+
+:root {
+	// Bootstrap base colors
+	// ---------------------
+	--gray-100: #f8f9fa;
+	--gray-200: #e9ecef;
+	--gray-300: #dee2e6 ;
+	--gray-400: #ced4da;
+	--gray-500: #adb5bd;
+	--gray-600: #6c757d;
+	--gray-700: #495057;
+	--gray-800: #343a40;
+	--gray-900: #212529;
+
+	--headings-color: var(--t4-gray-900);
+
+	--tpl-base-100: var(--t4-gray-100); // Base color of page, used for blank backgrounds
+	--tpl-base-200: var(--t4-gray-300); // Base color, a little darker
+	--tpl-base-300: var(--t4-gray-600); // Base color, even more darker
+	--tpl-base-content: var(--body-text-color); // Foreground content color to use on base color
+
+	// Masthead variables
+	--masthead-bg-color: var(--gray-100);
+	--masthead-text-color: var(--body-text-color);
+
+	// THEME COLORS
+	// ----------------------------------------
+	// Primary colors
+	--tpl-primary: 	rgba(var(--t4-primary-rgb), 1);
+	--tpl-primary-focus: rgba(var(--t4-primary-rgb), .85);
+	--tpl-primary-content: var(--t4-white);
+
+	// Success colors
+	--tpl-success: 	rgba(var(--t4-success-rgb), 1);
+	--tpl-success-focus: rgba(var(--t4-success-rgb), .85);
+	--tpl-success-content: var(--t4-white);
+
+	// Info colors
+	--tpl-info: 	rgba(var(--t4-success-rgb), 1);
+	--tpl-info-focus: rgba(var(--t4-success-rgb), .85);
+	--tpl-iinfo-content: var(--t4-white);
+
+	// Warning colors
+	--tpl-warning: 	rgba(var(--t4-warning-rgb), 1);
+	--tpl-warning-focus: rgba(var(--t4-warning-rgb), .85);
+	--tpl-warning-content: var(--t4-white);
+
+	// Danger colors
+	--tpl-danger: 	rgba(var(--t4-danger-rgb), 1);
+	--tpl-danger-focus: rgba(var(--t4-warning-rgb), .85);
+	--tpl-danger-content: var(--t4-white);
+	
+	// Mobile view
+	@include media-breakpoint-down(sm) {
+		// Resize font
+		--h1-font-size: 28px;
+		--h2-font-size: 24px;
+	}
+}

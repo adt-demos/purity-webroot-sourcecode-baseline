@@ -1,0 +1,71 @@
+// ------------------------------------
+// FORMS
+// ------------------------------------
+
+// Extend style in base
+// --------------------
+@import "../../../plugins/system/t4/themes/base/scss/_forms";
+
+// 
+// Button
+// -----------------------------------
+.t4-wrapper {
+	.btn {
+		text-transform: uppercase;
+
+		&.btn-outline-primary {		
+			&:hover {
+				color: $white !important;
+			}
+		}
+
+		&.btn-outline-dark {
+			border-color: var(--t4-border-color);
+			color: var(--headings-color);
+		}
+
+		&.btn-outline-white:hover {
+			color: $gray-900 !important;
+		}
+
+		// Font Icon
+		.fa, .fas {
+			line-height: var(--t4-btn-line-height);
+		}
+	}
+}
+
+
+// 
+// Textual form controls
+// -----------------------------------
+.form-control {
+
+}
+
+.control-label {  
+  .form-control-feedback {
+    z-index: 1;
+
+    &:after {
+      border-top-color: var(--t4-border-color);
+    }
+  }
+}
+
+// 
+// Input group
+// ---------------------------
+.input-group-addon {
+  > span {
+  }
+}
+
+
+// 
+// Btn Toolbar
+// --------------------------
+.btn-toolbar {
+  .btn-group + .btn-group {
+  }
+}

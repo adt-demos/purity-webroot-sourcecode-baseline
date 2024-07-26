@@ -1,0 +1,63 @@
+//
+// Templates Assets
+// ---------------------------------------------
+
+// Global styles
+@import "global";
+
+// Core style
+@import "../../../plugins/system/t4/themes/base/scss/core";
+
+// All form elements style
+@import "forms";
+
+// Component styles
+@import "components";
+
+// Utilityies style
+@import "utilities";
+
+// Navigation styles
+@import "navigations";
+
+// Modules style
+@import "modules";
+
+// Joomla styles
+@import "joomla";
+
+// Typography
+@import "typo";
+
+// Megamenu
+@import "megamenu";
+
+//Offcanvas menu
+@import "offcanvas";
+
+// ACM Style
+@import "acm";
+
+// Template styles
+@import "styles";
+
+// Legacy style
+@import "../../../plugins/system/t4/themes/base/scss/legacy";
+
+// JomSocial
+@import "extras/com_jomsocial.scss";
+
+// Easy Blog
+@import "extras/com_easyblog.scss";
+
+// Easy Discuss
+@import "extras/com_easydiscuss.scss";
+
+// DOCman
+@import "extras/com_docman.scss";
+
+// VirtueMart
+@import "extras/com_virtuemart.scss";
+
+// Kenuna
+@import "extras/com_kunena.scss";

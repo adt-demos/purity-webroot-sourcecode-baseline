@@ -1,0 +1,306 @@
+// Template variables
+@import "../../../plugins/system/t4/themes/base/scss/frontend-edit";
+// @import "vars";
+
+#kunena.layout {
+
+  svg {
+    vertical-align: text-bottom;
+  }
+
+  .shadow-lg {
+    box-shadow: none !important;
+  }
+
+  // Navbar
+  .navbar {
+    background: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    border-bottom: 1px solid var(--gray-200) !important;
+    border-radius: 0 !important;
+    padding: 0;
+
+    .navbar-nav {
+      margin-bottom: -1px;
+      gap: 0.5rem;
+
+      .nav-item {
+        position: relative;
+
+        &:not(.active) {
+          &::after {
+            background: #0a58ca;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 1px;
+            transition: width 0.5s;
+            position: absolute;
+            width: 0;
+
+          }
+
+          &:hover {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+
+        &.active {
+          border-bottom: 1px solid #084298;
+        }
+      }
+    }
+
+    .btn-group {
+      background-color: transparent;
+      border: 0;
+
+      .dropdown-toggle {
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+      }
+
+      .dropdown-menu {
+        text-align: center;
+
+        a {
+          background: transparent;
+          text-decoration: none;
+
+          &.btn-outline-success,
+          &.btn-outline-warning,
+          &.btn-outline-danger,
+          &.btn-outline-secondary {
+            border: 1px solid var(--bs-btn-color);
+            color: var(--bs-btn-color);
+
+            &:hover {
+              background: var(--bs-btn-color);
+              color: #fff;
+            }
+          }
+        }
+
+        #logout-form {
+          float: none;
+        }
+
+        #announcement {
+          margin-bottom: $spacer / 2;
+        }
+      }
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+  }
+
+  .breadcrumb {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 1rem;
+  }
+
+  .nav-tabs:before {
+    bottom: -1px;
+  }
+
+  #editprofile {
+    @include media-breakpoint-down(sm) {
+      overflow: auto;
+    }
+
+    #birthdate {
+      margin-left: 0;
+    }
+  }
+
+  .tabs {
+    .tab-pane {
+      // overflow: auto;
+
+      .row {
+        padding: 0 $spacer;
+      }
+    }
+
+    .tab-pane h3,
+    table {
+      margin-bottom: $spacer;
+    }
+  }
+
+  #editUser,
+  #editprofile {
+    select {
+      width: auto;
+    }
+
+    .form-control,
+    input {
+      max-width: 240px !important;
+      width: 100%;
+    }
+  }
+
+  #editsettings {
+    select {
+      min-width: auto;
+    }
+  }
+
+  .custom-select optgroup,
+  .custom-select option,
+  .form-select optgroup,
+  .form-select option {
+    color: #555;
+  }
+
+  // Add New Announcements
+  #editform {
+    .input-group.date {
+      display: flex !important;
+
+      input {
+        border: 1px solid #e9ecef;
+        font-size: $input-font-size;
+        line-height: $input-line-height;
+        height: auto;
+        padding: $input-padding-y $input-padding-x;
+      }
+
+      span {
+        border: 1px solid #e9ecef;
+        border-radius: 0 $border-radius $border-radius 0;
+        padding: $input-padding-y $input-padding-x;
+      }
+    }
+
+    .controls.center {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+    }
+  }
+
+  // Kunena Login Form
+  .kloginform {
+    h1 {
+      margin-bottom: $spacer;
+    }
+
+    .form-inline {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .input-append input {
+      border: $input-btn-border-width solid #dee2e6;
+      border-radius: 4px;
+      background: #ffffff;
+      color: #495057;
+      float: none;
+      font-size: $input-font-size;
+      font-weight: $input-font-weight;
+      line-height: $input-line-height;
+      height: auto;
+      outline: none;
+      margin-bottom: $spacer;
+      padding: $input-padding-y $input-padding-x;
+      width: 100% !important;
+
+      &:focus {
+        color: #212529;
+      }
+    }
+
+    span.add-on {
+      display: none;
+    }
+
+    #kform-login-submit {
+      .btn-outline-primary {
+        border-color: #0a58ca;
+        background-color: #0a58ca;
+        color: #fff;
+        width: 100%;
+
+        &:hover {
+          opacity: 0.85;
+        }
+      }
+
+      a {
+        color: #495057;
+        padding: 0 8px;
+      }
+
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+.t4-header {
+  background-color: transparent;
+  border-bottom: 1px solid var(--t4-border-color);
+}
+
+fieldset {
+  legend {
+    border-color: var(--t4-border-color);
+  }
+}
+
+.password-group {
+  .text-center {
+    text-align: unset !important;
+  }
+}
+
+select.custom-select {
+  background-color: var(--body-bg-color);
+  border-color: var(--tpl-base-200);
+  color: var(--headings-color);
+  width: 100%;
+  max-width: 240px;
+}
+
+.profile-edit {
+  .form-select {
+    max-width: 240px;
+    width: 100%;
+  }
+}
+
+.choices__inner,
+.choices__list--dropdown {
+  background-color: var(--body-bg-color);
+  border-color: var(--tpl-base-200);
+  color: var(--headings-color);
+}
+
+.choices__list--dropdown {
+  .choices__item--selectable.is-highlighted {
+    background-color: var(--tpl-base-100);
+  }
+}
+
+.choices__input {
+  background-color: var(--body-bg-color);
+  border: 1px solid var(--tpl-base-200);
+  border-radius: var(--t4-border-radius);
+  color: var(--headings-color);
+}
+
+body.dark-active .profile-edit .bg-light {
+  background-color: var(--tpl-base-100) !important;
+}

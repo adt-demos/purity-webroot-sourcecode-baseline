@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <title>Features Intro Style 1</title>
+	<sampledata></sampledata>
+	<fields name="features-intro">
+
+		<fieldset name="section-features" label="FEATURES_SECTION_LABEL" description="FEATURES_SECTION_LABEL_DESC" multiple="1">
+			<field name="feature-title" type="textarea" default="" label="FEATURE_HEADING_LABEL" description="FEATURE_HEADING_DESC" />
+			<field name="feature-desc" type="textarea" default="" label="FEATURE_DESC_LABEL" description="FEATURE_DESC_DESC" />
+			
+			<field name="feature-img" type="media" default="" label="FEATURE_IMAGE_LABEL" description="FEATURE_IMAGE_DESC"  />
+			<field name="media-alignment" type="list" default="left" label="FEATURES_ALIGN_MEDIA_LABEL" description="FEATURES_ALIGN_MEDIA_DESC" >
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</field>
+
+			<field name="feature-btn" type="jalist">
+				<field name="btn-text" type="text" default="" label="FEATURE_BTN_TEXT_LABEL" description="FEATURE_BTN_TEXT_DESC"/>
+				<field name="btn-link" type="text" default="" label="FEATURE_BTN_LINK_LABEL" description="FEATURE_BTN_LINK_DESC"/>
+				<field name="btn-type" type="list" default="" label="FEATURE_BTN_TYPE_LABEL" description="FEATURE_BTN_TYPE_DESC">
+					<option value="btn-primary">Primary</option>
+					<option value="btn-secondary">Secondary</option>
+					<option value="btn-success">Success</option>
+					<option value="btn-light">Light</option>
+					<option value="btn-outline-light">Outline Light</option>
+					<option value="btn-dark">Dark</option>
+					<option value="btn-outline-dark">Outline Dark</option>
+				</field>
+			</field>
+		</fieldset>
+  </fields>
+</form>

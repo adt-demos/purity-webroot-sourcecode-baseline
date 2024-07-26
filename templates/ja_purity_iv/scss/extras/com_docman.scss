@@ -1,0 +1,487 @@
+.k-ui-joomla {
+  .btn {
+    --t4-btn-border-color: var(--t4-border-color);
+    --t4-btn-hover-border-color: var(--t4-border-color);
+    --t4-btn-hover-bg: var(--color-dark);
+    --t4-btn-hover-color: #fff;
+  }
+}
+
+.k-ui-namespace {
+  // Docman Table
+  // --------------------------------------
+  .docman_table_layout {
+    .koowa_table {
+      margin-top: 0;
+
+      td {
+        border: none;
+        padding-top: $spacer;
+        padding-bottom: $spacer;
+      }
+
+      tr {
+        padding-top: $spacer;
+        padding-bottom: $spacer;
+      }
+    }
+
+    .koowa_table__manage {
+      a {
+        font-size: 0;
+      }
+
+      .btn:hover {
+        opacity: 0.85;
+      }
+
+      .btn.btn-default {
+        &::before {
+          content: "\f044";
+          font-size: 13px;
+          font-family: FontAwesome;
+        }
+      }
+
+      .btn.btn-danger {
+        &::before {
+          content: "\f1f8";
+          font-size: 13px;
+          font-family: FontAwesome;
+        }
+      }
+    }
+  }
+
+  // Docman Category
+  // --------------------------------------
+  .docman_category {
+    border: 1px solid var(--t4-border-color);
+    border-radius: var(--t4-border-radius);
+    margin-bottom: $spacer;
+    padding: $spacer;
+
+    span[class*="k-icon-"]::before {
+      font-size: 26px;
+    }
+  }
+
+  // Docman Item
+  .docman_item {
+    .koowa_header__item--image_container {
+      display: table-cell;
+      padding-right: $spacer;
+    }
+
+    span[class*="k-icon-"]::before {
+      font-size: 26px;
+    }
+
+    .whitespace_preserver {
+      display: block;
+      --body-link-color: var(--headings-color);
+
+      a {
+        font-weight: var(--heading-font-weight);
+      }
+    }
+
+    .text-muted {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      margin-top: $spacer-xs;
+
+      span:not(:first-child) {
+        &::before {
+          background: var(--t4-gray-500);
+          border-radius: 50%;
+          content: "";
+          display: inline-block;
+          height: 2px;
+          margin: 0 8px;
+          vertical-align: middle;
+          width: 2px;
+        }
+      }
+
+      i {
+        margin-right: $spacer-xs;
+      }
+    }
+
+    // Button Download 
+    .koowa_table__download {
+      .btn-default {
+        background-color: var(--color-primary);
+        border-color: var(--color-primary);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: var(--t4-btn-padding-y) var(--t4-btn-padding-x);
+        width: 100%;
+
+        &:hover {
+          opacity: 0.85;
+        }
+      }
+    }
+
+    .footable-visible {
+      .k-js-docman-copy {
+        border-color: var(--t4-border-color);
+        color: var(--headings-color);
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  // Docman List Layout
+  // --------------------------------------
+  .docman_document_layout,
+  .docman_list_layout {
+    .docman_document {
+      margin: 0 0 $spacer;
+
+      @include media-breakpoint-up(lg) {
+        margin: 0 0 $spacer*2;
+      }
+    }
+
+    .koowa_header {
+      font-size: var(--h3-font-size);
+      font-weight: var(--heading-font-weight);
+      line-height: var(--heading-line-height);
+      --body-link-color: var(--headings-color);
+
+      @include media-breakpoint-down(sm) {
+        font-size: var(--h4-font-size);
+      }
+
+      .label {
+        font-size: 0.75rem;
+        vertical-align: top;
+      }
+    }
+
+    .docman_download {
+      border: 1px solid var(--t4-border-color);
+      border-radius: var(--t4-border-radius);
+      margin: 0 0 0 $spacer;
+      text-align: left;
+      padding: $spacer;
+
+      @include media-breakpoint-down(sm) {
+        float: none;
+        margin: 0 0 $spacer;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .docman_document_details {
+        border-color: var(--t4-border-color);
+      }
+
+      >div+div {
+        border-top: 1px solid var(--t4-border-color);
+        padding-top: $spacer/2;
+        margin-top: $spacer/2;
+      }
+    }
+  }
+
+  // Docman Gallery
+  // --------------------------------------
+  .koowa_media--gallery {
+    .koowa_media__item__options {
+      background: var(--tpl-base-200);
+      border-radius: var(--t4-border-radius);
+    }
+
+    .koowa_media__item__content {
+      background: none;
+      border-color: var(--t4-border-color);
+      font-size: 0.75rem;
+      margin-bottom: var(--t4-gutter-x);
+    }
+
+    .gallery-initialized {
+      --body-link-color: var(--headings-color);
+    }
+
+    .item {
+      text-align: center;
+    }
+
+    .koowa_header {
+      font-size: var(--h4-font-size);
+
+      @include media-breakpoint-up(lg) {
+        font-weight: var(--heading-font-weight);
+        line-height: var(--heading-line-height);
+      }
+
+      .label {
+        font-size: 0.75rem
+      }
+    }
+
+    .koowa_media__item__link {
+      padding: $spacer;
+    }
+
+    .koowa_media_contents.row {
+      --t4-gutter-x: 1rem;
+    }
+  }
+
+  // Tree List
+  // --------------------------------------
+  .docman_list_layout--tree {
+    .koowa_table_list {
+      .docman_item {
+        .koowa_header {
+          font-size: var(--h4-font-size);
+        }
+      }
+    }
+
+    .docman_categories {
+      border-top: 0;
+    }
+
+    .docman_list__sidebar,
+    .docman_list__content {
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+      }
+    }
+
+    .docman_list__sidebar {
+      border: 1px solid var(--color-primary);
+      border-radius: var(--t4-border-radius);
+      padding: $spacer 0;
+
+      .jqtree-selected>.jqtree-element {
+        background: transparent;
+
+        &:active,
+        &:focus,
+        &:hover {
+          background: transparent;
+          color: var(--body-link-hover-color);
+        }
+      }
+    }
+
+    .k-js-toolbar {
+      a.btn {
+        @include media-breakpoint-down(sm) {
+          margin: 0;
+          width: 100%;
+
+          & + a.btn {
+            margin-top: $spacer/2;
+          }
+        }
+      }
+    }
+  }
+
+  // Docman Pagination
+  .k-pagination {
+    justify-content: center;
+
+    .k-pagination__pages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $spacer/2;
+
+      li a {
+        background-color: var(--t4-pagination-bg);
+        border-radius: var(--t4-pagination-border-radius);
+        border: var(--t4-pagination-border-width) solid var(--t4-pagination-border-color);
+        color: var(--t4-pagination-color);
+        font-size: var(--t4-pagination-font-size);
+        line-height: inherit;
+        padding: var(--t4-pagination-padding-y) var(--t4-pagination-padding-x);
+        @extend .pagination;
+      }
+
+      .k-is-active a {
+        background-color: var(--t4-pagination-active-bg);
+        border-color: var(--t4-pagination-active-border-color);
+        color: var(--t4-pagination-active-color);
+      }
+    }
+  }
+
+  .k-toolbar {
+    background: var(--tpl-base-100);
+    border-color: var(--t4-border-color);
+    border-radius: var(--t4-border-radius);
+  }
+}
+
+// Docman Icon
+.koowa_icon--image,
+.k-icon-document-image {
+  &::before {
+    color: #2CC990;
+  }
+}
+
+.koowa_icon--pdf,
+.k-icon-document-pdf {
+  &::before {
+    color: #fc6a6b;
+  }
+}
+
+.koowa_icon--video,
+.k-icon-document-video {
+  &::before {
+    color: #FF7416;
+  }
+}
+
+.koowa_icon--archive,
+.k-icon-document-archive {
+  &::before {
+    color: #42729B;
+  }
+}
+
+.koowa_icon--audio,
+.k-icon-document-audio {
+  &::before {
+    color: #1ABC9C;
+  }
+}
+
+.koowa_icon--document,
+.k-icon-document-document {
+  &::before {
+    color: #4275f4;
+  }
+}
+
+// Submit Document
+.k-upload,
+.k-upload__content-wrapper {
+  background: var(--tpl-base-100);
+  border-color: var(--t4-border-color);
+  border-radius: var(--t4-border-radius);
+  color: var(--body-text-color);
+}
+
+.k-upload__button {
+  background: var(--tpl-base-200);
+  color: var(--body-text-color);
+  border-color: var(--t4-border-color);
+}
+
+.docman_submit_layout {
+  input {
+    background: var(--tpl-base-100);
+    border-radius: var(--t4-border-radius);
+    border: 1px solid var(--t4-border-color);
+    color: var(--body-text-color);
+  }
+}
+
+// Module
+// ---------------------------------
+.module-ct {
+  .navbar {
+    --t4-navbar-padding-x: 0;
+    --t4-navbar-padding-y: 0;
+    --t4-navbar-color: var(--body-text-color);
+  }
+
+  .navbar-nav {
+    --t4-nav-link-hover-color: var(--body-link-hover-color);
+  }
+
+  .k-ui-namespace {
+    --body-link-color: var(--body-text-color);
+
+    ul {
+      padding: 0;
+    }
+  }
+}
+
+// VIEWS TYPE DOCMAN 
+.module_docman_sirbar_r {
+  ul {
+    width: 100%;
+  }
+
+  .docment-submit {
+    background: var(--color-primary);
+    border: $btn-border-width solid var(--color-primary);
+    border-radius: $btn-border-radius;
+    color: #fff;
+    font-size: $btn-font-size;
+    margin-top: $spacer;
+    padding: $btn-padding-y $btn-padding-x;
+    text-align: center;
+  }
+}
+
+// DOCMAN - DOCUMENTS
+// -----------------------------------
+.mod_docman--documents {
+  .module_document {
+    border-bottom: 1px solid var(--t4-border-color);
+    padding-top: $spacer-sm;
+    padding-bottom: $spacer-sm;
+  }
+
+  .whitespace_preserver {
+    display: flex;
+    justify-content: space-between;
+
+    .koowa_header__title_link {
+      display: -webkit-box;
+      font-weight: var(--heading-font-weight);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+
+#content_editors-xtd_menu_modal {
+  iframe {
+    width: 100%;
+  }
+}
+
+// 
+.select2-container--bootstrap {
+  .select2-selection {
+    background-color: transparent;
+    border-color: var(--t4-border-color);
+  }
+
+  .select2-dropdown {
+    background-color: var(--tpl-base-100);
+    border-color: var(--t4-border-color);
+  }
+}
+
+// .k-checkbox-dropdown-content {
+//   .btn {
+//     padding: $btn-padding-y-sm $btn-padding-x-sm;
+//     @extend .btn-outline-dark;
+//   }
+
+//   .btn-lg {
+//     @extend .btn;
+//   }
+// }

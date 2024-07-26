@@ -1,0 +1,206 @@
+//
+// OFF-CANVAS CONTENT STYLES
+// -------------------------------------
+// Extend style in base
+// --------------------
+@import "../../../plugins/system/t4/themes/base/scss/_offcanvas";
+
+// Offcanvas toggle
+// -----------------------------------
+.t4-offcanvas-toggle {
+  border: 0;
+  border-radius: 0;
+  color: $headings-color;
+  display: block;
+  font-size: 20px;
+  line-height: var(--t4-btn-line-height);
+  padding: 0;
+  transition: all 0.35s ease-in-out;
+  width: auto;
+
+  &:hover {
+    cursor: pointer;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+}
+
+
+.t4-offcanvas {
+  background: var(--body-bg-color);
+
+  // Off Canvas Header
+  // -----------------------------------
+  .t4-off-canvas-header {
+    background: transparent;
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+
+    button.close {
+      background: transparent;
+      height: auto;
+      width: auto;
+
+      span {
+        background: transparent;
+        transform: none;
+        height: auto;
+        width: auto;
+      }
+
+      &:hover,&:focus,&:active {
+        background: transparent;
+        color: var(--color-primary);
+
+        span {
+          color: var(--color-primary);
+        }
+      }
+    }
+  }
+
+  
+  // Off Canvas Body
+  // -----------------------------------  
+  .t4-off-canvas-body {
+    display: flex;
+    flex-direction: column;
+    padding: $grid-gutter-width 0;
+
+    // Nav bar
+    .navbar {
+      .nav-item {
+        align-items: center;
+        padding: 0;
+      }
+
+      .nav-link,
+      .separator {
+        color: $headings-color;
+        font-size: $font-size-base;
+        padding: $spacer-xl / 4 0;
+        font-weight: 600;
+      }
+
+      // Dropdown menu
+      .dropdown-menu {
+        background: transparent;
+        padding-left: 0;
+
+        .nav-item {
+          padding-left: $spacer;
+        }
+      }
+
+      // Drilldown effect
+      // ----------------
+      &.drilldown-effect {
+        margin-left: -$grid-gutter-width;
+        margin-right: -$grid-gutter-width;
+
+        .navbar-nav .btn-toggle {
+          background: transparent;
+          border: 1px solid var(--t4-border-color);
+          color: $headings-color;
+          border-radius: $border-radius;
+          right: 0;
+
+          &:after {
+            color: $headings-color;
+          }
+
+          &:hover,&:focus,&:active {
+            border-color: var(--color-primary);
+            background: transparent;
+            color: var(--color-primary);
+
+            &:after {
+              color: var(--color-primary);
+            }
+          }
+
+          &.is-active:after {
+            color: $headings-color;
+          }
+        }
+
+        .sub-menu-back {
+          background: transparent;
+          border: 1px solid var(--t4-border-color);
+          border-radius: $border-radius;
+          color: $headings-color;
+          margin-left: $grid-gutter-width;
+          margin-right: $grid-gutter-width;
+
+          &:hover,&:focus,&:active {
+            background: transparent;
+            border-color: var(--color-primary);
+          }
+        }
+
+        .nav-item {
+          padding-left: $grid-gutter-width;
+          padding-right: $grid-gutter-width;
+        }
+
+        .navbar-nav {
+          .nav-item {
+            align-items: center;
+
+            .btn-toggle {
+              margin-top: 0;
+              right: auto;
+            }
+
+            .dropdown-menu .nav-item {
+              border-bottom: 1px solid var(--t4-border-color);
+              align-items: center;
+              margin-left: $grid-gutter-width;
+              margin-right: $grid-gutter-width;
+              padding-left: 0;
+              padding-right: 0;
+
+              .btn-toggle {
+                right: auto;
+              }
+            }
+          }
+        }
+
+        .active {
+          > a,
+          > span {
+            color: var(--color-primary);
+          }
+        }
+      }
+    }
+
+    // Module on offcanvas
+    .t4-module {
+      margin-top: 0;
+      
+      + .t4-module {
+        border: 0;
+        margin-top: 0;
+        padding-top: 0;
+      }
+      
+      // Module Tilte
+      .module-title {
+        margin-bottom: $grid-gutter-width / 4;
+      }
+
+      // Module Inner
+      .module-inner {
+        background: transparent;
+        padding: 0 $grid-gutter-width;
+      }
+    }
+
+    .mod-bottom {
+      margin-top: auto!important;
+      margin-bottom: 0!important;
+    }
+  }
+}

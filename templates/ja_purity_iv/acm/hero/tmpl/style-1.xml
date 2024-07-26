@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <title>Hero Style 1</title>
+  <sampledata>
+ </sampledata>
+  <fields name="hero">
+  	<fieldset name="sl-opt" label="HERO_BASIC_1_LABEL" description="HERO_BASIC_DESC">
+			<field name="autoplay" type="list" default="true" label="HERO_AUTOPLAY_TITLE" description="HERO_AUTOPLAY_DES">
+				<option value="true">JYES</option>
+				<option value="false">JNO</option>
+			</field>
+
+			<field name="mask" type="list" default="mask-rtl" label="HERO_MASK_TITLE" description="HERO_MASK_DES">
+				<option value="mask-rtl">Right To Left</option>
+				<option value="mask-ltr">Left To Right</option>
+				<option value="mask-btt">Bottom To Top</option>
+				<option value="mask-normal">Full Mask</option>
+				<option value="no-mask">JNO</option>
+			</field>
+
+			<field name="auto-time" type="text" default="5000" label="HERO_AUTOPLAY_TIME_TITLE" description="HERO_AUTOPLAY_TIME_DESC"></field>
+		</fieldset>
+		
+		<fieldset name="sliders" label="HERO_BASIC_2_LABEL" description="HERO_BASIC_2_DESC" multiple="1">
+			<field name="image-decor" type="media" default="" label="HERO_IMG_DECOR_TITLE" description="HERO_IMG_DECOR_DESC" required="1"></field>
+			<field name="hero-subheading" type="text" default="" label="HERO_SUB_HEADING_LABEL" description="HERO_SUB_HEADING_DESC"></field>
+			<field name="hero-heading" type="text" default="" label="HERO_HEADING_LABEL" description="HERO_HEADING_DESC"></field>
+			<field name="hero-intro" type="textarea" default="" label="HERO_INTRO_LABEL" description="HERO_HEADING_DESC"></field>
+			<field name="hero-content-alignment" type="list" label="HERO_CONTENT_ALIGNMENT_LABEL" description="HERO_CONTENT_ALIGNMENT_DESC" >
+				<option value="start">Align Left</option>
+				<option value="center">Align Center</option>
+				<option value="end">Align Right</option>
+			</field>
+
+			<field name="button-1" type="text" default="" label="HERO_BUTTON_1_LABEL" description="HERO_BUTTON_1_DESC"/>
+			<field name="btn-1-link" type="text" default="" label="HERO_BUTTON_1_LINK_LABEL" description="HERO_BUTTON_1_LINK_DESC"/>
+			<field name="btn-1-type" type="list" default="" label="HERO_BUTTON_1_TYPE_LABEL" description="HERO_BUTTON_1_TYPE_DESC">
+				<option value="primary">Primary</option>
+				<option value="secondary">Secondary</option>
+				<option value="success">Success</option>
+				<option value="light">Light</option>
+				<option value="dark">Dark</option>
+				<option value="outline-primary">Outline Primary</option>
+				<option value="outline-secondary">Outline Secondary</option>
+				<option value="outline-success">Outline Success</option>
+				<option value="outline-danger">Outline Danger</option>
+				<option value="outline-warning">Outline Warning</option>
+				<option value="outline-info">Outline Info</option>
+				<option value="outline-light">Outline Light</option>
+				<option value="outline-dark">Outline Dark</option>
+			</field>
+			<field name="button-2" type="text" default="" label="HERO_BUTTON_2_LABEL" description="HERO_BUTTON_2_DESC"/>
+			<field name="btn-2-link" type="text" default="" label="HERO_BUTTON_2_LINK_LABEL" description="HERO_BUTTON_2_LINK_DESC"/>
+			<field name="btn-2-type" type="list" default="" label="HERO_BUTTON_2_TYPE_LABEL" description="HERO_BUTTON_2_TYPE_DESC">
+				<option value="primary">Primary</option>
+				<option value="secondary">Secondary</option>
+				<option value="success">Success</option>
+				<option value="light">Light</option>
+				<option value="dark">Dark</option>
+				<option value="outline-primary">Outline Primary</option>
+				<option value="outline-secondary">Outline Secondary</option>
+				<option value="outline-success">Outline Success</option>
+				<option value="outline-danger">Outline Danger</option>
+				<option value="outline-warning">Outline Warning</option>
+				<option value="outline-info">Outline Info</option>
+				<option value="outline-light">Outline Light</option>
+				<option value="outline-dark">Outline Dark</option>
+			</field>
+		</fieldset>
+  </fields>
+</form>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <title>Hero Style 2</title>
+  <sampledata>
+ </sampledata>
+  <fields name="hero">
+		<fieldset name="sliders" label="HERO_BASIC_2_LABEL" description="HERO_BASIC_2_DESC" multiple="1">
+			<field name="hero-heading" type="text" default="" label="HERO_HEADING_LABEL" description="HERO_HEADING_DESC"></field>
+			<field name="hero-desc" type="textarea" default="" label="HERO_DESC_LABEL" description="HERO_DESC_DESC"></field>
+			<field name="hero-media" type="media" default="" label="HERO_MEDIA_LABEL" description="HERO_MEDIA_DESC" required="1"></field>
+			<field name="hero-media-alignment" type="list" default="" label="HERO_MEDIA_ALIGNMENT_LABEL" description="HERO_MEDIA_ALIGNMENT_DESC">
+				<option value="0">Left</option>
+				<option value="1">Right</option>
+			</field>
+
+			<field name="hero-btn" type="text" default="" label="HERO_BUTTON" description="HERO_BUTTON_DES"/>
+			<field name="hero-btn-link" type="text" default="" label="HERO_BUTTON_LINK" description="HERO_BUTTON_LINK_DES"/>
+			<field name="hero-btn-type" type="list" default="" label="HERO_BUTTON_TYPE" description="HERO_BUTTON_TYPE_DES">
+				<option value="primary">Primary</option>
+				<option value="secondary">Secondary</option>
+				<option value="success">Success</option>
+				<option value="light">Light</option>
+				<option value="dark">Dark</option>
+				<option value="outline-dark">Outline Dark</option>
+			</field>
+		</fieldset>
+  </fields>
+</form>
